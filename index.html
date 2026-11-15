@@ -193,6 +193,8 @@
             // ボードの初期化 (20x10のゼロマトリックス)
             board = Array.from({length: ROWS}, () => Array(COLS).fill(0));
             score = 0; level = 1; lines = 0;
+            dropInterval = 1000;
+            dropCounter = 0;
             updateUI();
             nextPiece = createPiece();
             spawnPiece();
